@@ -1,0 +1,49 @@
+.map-java-view {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.map-java-view .sidebar {
+  width: 21rem;
+}
+
+.map-java-view .search-field {
+  width: 20rem;
+}
+
+.map-java-view .card {
+  width: 16rem;
+  white-space: normal;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+ .map-java-view {
+    flex-direction: column;
+  }
+
+ .map-java-view .sidebar {
+    width: 100%;
+  }
+
+ .map-java-view .sidebar vaadin-scroller {
+    min-height: 10rem;
+  }
+
+
+ .map-java-view .search-field {
+    width: 100%;
+  }
+
+ .map-java-view .card {
+    width: max-content;
+    min-width: 10rem;
+    padding-right: var(--lumo-space-l);
+  }
+
+ .map-java-view .sidebar .card-list {
+    flex-direction: row;
+    gap: var(--lumo-space-s);
+  }
+}
